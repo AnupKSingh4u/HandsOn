@@ -1,12 +1,94 @@
-<!-- index.html -->
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>My First Web Page</title>
+  <title>AstangYoga | Home</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .header {
+      text-align: center;
+      padding: 30px;
+      background-color: #f4f4f4;
+    }
+
+    .header img {
+  max-width: 800px;
+    }
+
+    .mentor-links {
+      margin-top: 20px;
+    }
+
+    .mentor-links a {
+      display: inline-block;
+      margin: 10px;
+      padding: 12px 24px;
+      background-color: #4CAF50;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 16px;
+    }
+
+    .mentor-links a:nth-child(2) {
+      background-color: #2196F3;
+    }
+
+    .content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 40px;
+    }
+
+    .description {
+      width: 55%;
+      padding-right: 20px;
+      line-height: 1.6;
+      font-size: 16px;
+      color: #333;
+    }
+
+    .description h2 {
+      color: #2c3e50;
+    }
+
+    .content img {
+      width: 600%;
+	  max-width: 400px;
+      border-radius: 30px;
+    }
+  </style>
 </head>
 <body>
-    <h1>Hello, world!</h1>
-    <p>This page is live on the internet.</p>
+
+  <div class="header">
+   <h1 style="color: #FF9933;">Welcome to AstangYoga</h1>
+    <img src="images/yoga.jpg" alt="Yoga Main Image">
+    <p>Meet our experienced mentors:</p>
+    <div class="mentor-links">
+      <a href="anup.html">Anup</a>
+      <a href="neha.html">Neha</a>
+    </div>
+  </div>
+
+  <div class="content">
+    <div class="description">
+      <h2 style="color: #FF9933;">About AstangYoga</h2>
+      <p>
+        <strong> AstangYoga is more than just a yoga center</strong> <br> it's a sanctuary for personal transformation. Located in a peaceful environment, we offer a blend of traditional and modern yoga practices tailored for all levels. Whether you're a beginner looking to improve flexibility or an advanced practitioner aiming to deepen your spiritual journey, our programs are designed to meet your goals.
+      </p>
+      <p>
+        Led by expert mentors Anup and Neha, our sessions focus on holistic well-being — combining physical postures (asanas), breath control (pranayama), meditation, and mindfulness. We believe that yoga is not just a practice, but a lifestyle. At AstangYoga, you'll find a supportive community, peaceful ambiance, and personalized attention that will guide you toward a healthier and more balanced life.
+      </p>
+    </div>
+    <img src="images/vinka.jpg" alt="AstangYoga Center">
+  </div>
+
 </body>
 </html>
+
