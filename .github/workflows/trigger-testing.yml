@@ -1,0 +1,20 @@
+name: Trigger Framework Tests
+
+on:
+  push:
+    branches:
+      - main  # or whatever branch your SUT uses
+    paths:
+      - '**'  # change this to narrow down specific folders if needed
+
+jobs:
+  dispatch-framework:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Trigger Framework Repo via repository_dispatch
+        run: |
+          curl -X POST https://api.github.com/repos/AnupKSingh4u/Extent/dispatches \
+          -H "Authorization: token ${{ secrets.FRAMEWORK_TRIGGER_PAT }}" \
+          -H "Accept: application/vnd.github.v3+json" \
+          -d '{"event_type":"sut-updated"}'
