@@ -15,6 +15,6 @@ jobs:
       - name: Trigger Framework Repo via repository_dispatch
         run: |
           curl -X POST https://api.github.com/repos/AnupKSingh4u/Extent/dispatches \
-          -H "Authorization: token ${{ secrets.Testing }}" \
+          -H "Authorization: token ${{ secrets.FULLACCESSTOKEN }}" \
           -H "Accept: application/vnd.github.v3+json" \
           -d '{"event_type":"sut-updated"}'
